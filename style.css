@@ -20,7 +20,7 @@
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:64px}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0;background:url(img/grain.webp);background-size:256px;opacity:.55;pointer-events:none;z-index:100;mix-blend-mode:multiply}
+body::before{content:"";position:fixed;inset:0;background:url(grain.webp);background-size:256px;opacity:.55;pointer-events:none;z-index:100;mix-blend-mode:multiply}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
 ul,ol,dl,dd,figure,p,h1,h2,h3{margin:0;padding:0}
@@ -38,7 +38,7 @@ b{font-weight:700}
   font-family:var(--sans);font-weight:900;font-stretch:125%;text-transform:uppercase;
   color:var(--red);line-height:.86;letter-spacing:-.015em;
   filter:url(#rough);
-  -webkit-mask-image:url(img/stamp.webp);mask-image:url(img/stamp.webp);
+  -webkit-mask-image:url(stamp.webp);mask-image:url(stamp.webp);
   -webkit-mask-size:700px;mask-size:700px;
 }
 
