@@ -10,18 +10,26 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=8">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Crect width=%2716%27 height=%2716%27 fill=%27%23b8282b%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"John Lander Caballero","jobTitle":"Operations Specialist & Virtual Assistant","email":"mailto:caballerojohnlander@gmail.com","telephone":"+63-976-094-3854","address":{"@type":"PostalAddress","addressLocality":"Dasmariñas City","addressRegion":"Cavite","addressCountry":"PH"}}
 </script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough" x="-2%" y="-5%" width="104%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="2" seed="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="nav" id="top">
+<span id="top"></span>
+<header class="nav">
   <div class="wrap nav-inner">
-    <a href="#top" class="brand">Portfolio 2026</a>
+    <a href="#top" class="brand">Portfolio <span>(2026)</span></a>
     <nav aria-label="Primary">
       <button class="menu-btn" aria-expanded="false" aria-controls="menu">menu</button>
       <ul id="menu">
@@ -36,60 +44,75 @@
 
 <main id="main">
 
-  <!-- Cover -->
-  <section class="slide cover" aria-label="Cover">
-    <div class="wrap cover-inner">
-      <div class="cover-lockup">
-        <h1 class="cover-title">Portfolio.</h1>
-        <div class="cover-meta"><span>John Lander Caballero</span><span>2026</span></div>
+  <!-- Cover: folded spread -->
+  <section class="cover" aria-label="Cover">
+    <div class="wrap">
+      <h1 class="stamp cover-title">Portfolio.</h1>
+      <div class="spread">
+        <div class="page page-l">
+          <i class="hole" aria-hidden="true"></i><i class="hole b" aria-hidden="true"></i>
+          <p class="kicker mono">John Lander Caballero &nbsp;·&nbsp; 2026</p>
+          <p class="cover-lead">Operations specialist &amp; virtual assistant</p>
+          <p class="mono cover-desc">Chargeback prevention, insurance operations and digital administration. Based in Dasmariñas City, Cavite, PH.</p>
+          <a class="scroll-cue mono" href="#work">operations specialist &amp; virtual assistant <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="page page-r">
+          <i class="hole" aria-hidden="true"></i><i class="hole b" aria-hidden="true"></i>
+          <p class="kicker mono">contents</p>
+          <ol class="index">
+            <li><a href="#c1"><span class="n">(01)</span><span class="t">Chargeback Prevention</span><span class="m">Protect</span></a></li>
+            <li><a href="#c2"><span class="n">(02)</span><span class="t">Insurance Operations</span><span class="m">Support</span></a></li>
+            <li><a href="#c3"><span class="n">(03)</span><span class="t">Calendar Management</span><span class="m">Schedule</span></a></li>
+            <li><a href="#c4"><span class="n">(04)</span><span class="t">Email Management</span><span class="m">Inbox</span></a></li>
+            <li><a href="#c5"><span class="n">(05)</span><span class="t">Travel Management</span><span class="m">Itinerary</span></a></li>
+            <li><a href="#c6"><span class="n">(06)</span><span class="t">Visual Design</span><span class="m">Display</span></a></li>
+            <li><a href="#about"><span class="n">(07)</span><span class="t">About</span><span class="m">Profile</span></a></li>
+            <li><a href="#skills"><span class="n">(08)</span><span class="t">Core Competencies</span><span class="m">Skills</span></a></li>
+          </ol>
+        </div>
       </div>
     </div>
-    <a class="scroll-cue" href="#work">operations specialist &amp; virtual assistant <span aria-hidden="true">↓</span></a>
   </section>
 
   <div id="work">
     <h2 class="sr-only">Selected work</h2>
 
     <!-- 01 -->
-    <section class="slide case" aria-labelledby="c1">
-      <div class="wrap case-grid">
-        <div class="case-text">
-          <span class="num">01.</span>
-          <div class="case-body">
-            <h3 id="c1">Chargeback Prevention</h3>
-            <p class="small">Chargeback Prevention Specialist at <b>Chargemont LLC</b>, May – Oct 2026. Monitored and managed the <b>Ethoca &amp; Verifi alert networks</b> to issue timely refunds and <b>stop formal disputes before escalation</b>, while keeping every alert and chargeback record organized, categorized and up to date.</p>
-          </div>
-        </div>
-        <figure class="case-img"><img src="chargeback.webp" alt="A hand holding a phone with a payment confirmation screen on a red-orange background" width="960" height="1200" fetchpriority="high"></figure>
-      </div>
-    </section>
-
-    <section class="slide detail" aria-label="Chargeback prevention details">
+    <section class="case" aria-labelledby="c1">
       <div class="wrap">
-        <div class="mocks four">
+        <h3 id="c1" class="stamp case-title">Chargeback Prevention</h3>
+        <div class="case-grid">
+          <div class="case-copy">
+            <p class="red-copy">Chargeback Prevention Specialist at <b>Chargemont LLC</b>, May – Oct 2026. Monitored and managed the <b>Ethoca &amp; Verifi alert networks</b> to issue timely refunds and <b>stop formal disputes before escalation</b>, while keeping every alert and chargeback record organized, categorized and up to date.</p>
+            <div class="tags mono"><span class="yr">(01.)</span><ul><li>Alert networks</li><li>Data integrity</li><li>Evidence reporting</li><li>Auditing</li></ul></div>
+          </div>
+          <figure class="plate"><img src="img/chargeback.webp" alt="A hand holding a phone with a payment confirmation screen on a red-orange background" width="960" height="1200" fetchpriority="high"></figure>
+        </div>
+
+        <div class="mocks four" aria-label="Chargeback prevention details">
           <figure class="mock">
-            <div class="card ui">
+            <div class="card">
               <div class="ui-head"><span>Alerts</span><span class="pill">live</span></div>
               <ul class="rows">
-                <li><span class="tag ethoca">Ethoca</span><span class="bar w70"></span><span class="chip ok">refunded</span></li>
-                <li><span class="tag verifi">Verifi</span><span class="bar w55"></span><span class="chip ok">resolved</span></li>
-                <li><span class="tag ethoca">Ethoca</span><span class="bar w80"></span><span class="chip wait">in review</span></li>
-                <li><span class="tag verifi">Verifi</span><span class="bar w60"></span><span class="chip ok">refunded</span></li>
-                <li><span class="tag ethoca">Ethoca</span><span class="bar w45"></span><span class="chip ok">resolved</span></li>
+                <li><span class="tag t-red">Ethoca</span><span class="bar w70"></span><span class="chip">refunded</span></li>
+                <li><span class="tag t-ink">Verifi</span><span class="bar w55"></span><span class="chip">resolved</span></li>
+                <li><span class="tag t-red">Ethoca</span><span class="bar w80"></span><span class="chip wait">in review</span></li>
+                <li><span class="tag t-ink">Verifi</span><span class="bar w60"></span><span class="chip">refunded</span></li>
+                <li><span class="tag t-red">Ethoca</span><span class="bar w45"></span><span class="chip">resolved</span></li>
               </ul>
             </div>
             <figcaption>alert network management</figcaption>
           </figure>
           <figure class="mock">
-            <div class="card ui">
+            <div class="card">
               <div class="ui-head"><span>Records</span><span class="muted">sorted</span></div>
               <div class="table">
                 <span class="th">case</span><span class="th">category</span><span class="th">status</span>
-                <span class="bar w80"></span><span class="tag c1">fraud</span><span class="dot g"></span>
-                <span class="bar w60"></span><span class="tag c2">service</span><span class="dot g"></span>
-                <span class="bar w70"></span><span class="tag c3">billing</span><span class="dot y"></span>
-                <span class="bar w50"></span><span class="tag c1">fraud</span><span class="dot g"></span>
-                <span class="bar w75"></span><span class="tag c2">service</span><span class="dot g"></span>
+                <span class="bar w80"></span><span class="tag t-pink">fraud</span><span class="dot g"></span>
+                <span class="bar w60"></span><span class="tag t-lav">service</span><span class="dot g"></span>
+                <span class="bar w70"></span><span class="tag t-lime">billing</span><span class="dot y"></span>
+                <span class="bar w50"></span><span class="tag t-pink">fraud</span><span class="dot g"></span>
+                <span class="bar w75"></span><span class="tag t-lav">service</span><span class="dot g"></span>
               </div>
             </div>
             <figcaption>data integrity &amp; categorization</figcaption>
@@ -105,7 +128,7 @@
             <figcaption>evidence &amp; dispute reporting</figcaption>
           </figure>
           <figure class="mock">
-            <div class="card ui">
+            <div class="card">
               <div class="ui-head"><span>Audit</span><span class="muted">checklist</span></div>
               <ul class="checks">
                 <li><i>✓</i>transaction amount</li>
@@ -122,24 +145,20 @@
     </section>
 
     <!-- 02 -->
-    <section class="slide case" aria-labelledby="c2">
-      <div class="wrap case-grid">
-        <div class="case-text">
-          <span class="num">02.</span>
-          <div class="case-body">
-            <h3 id="c2">Insurance Operations</h3>
-            <p class="small">Three years at <b>EXL Philippines</b>, 2023 – 2026. Delivered <b>multi-channel customer support</b> through inbound and outbound calls and webchat, <b>processed claims and drafted detailed decision letters</b>, and handled secure payments under strict compliance standards, consistently meeting or exceeding key performance metrics.</p>
-          </div>
-        </div>
-        <figure class="case-img"><img src="insurance.webp" alt="A black headset resting on white letters and a blue folder on a cobalt blue background" width="1024" height="1024" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="slide detail" aria-label="Insurance operations details">
+    <section class="case flip" aria-labelledby="c2">
       <div class="wrap">
-        <div class="mocks four">
+        <h3 id="c2" class="stamp case-title">Insurance Operations</h3>
+        <div class="case-grid">
+          <div class="case-copy">
+            <p class="red-copy">Three years at <b>EXL Philippines</b>, 2023 – 2026. Delivered <b>multi-channel customer support</b> through inbound and outbound calls and webchat, <b>processed claims and drafted detailed decision letters</b>, and handled secure payments under strict compliance standards, consistently meeting or exceeding key performance metrics.</p>
+            <div class="tags mono"><span class="yr">(02.)</span><ul><li>Support</li><li>Claims</li><li>Payments</li><li>LOB</li></ul></div>
+          </div>
+          <figure class="plate"><img src="img/insurance.webp" alt="A black headset resting on white letters and a blue folder on a cobalt blue background" width="1024" height="1024" loading="lazy"></figure>
+        </div>
+
+        <div class="mocks four" aria-label="Insurance operations details">
           <figure class="mock">
-            <div class="card ui chat">
+            <div class="card chat">
               <div class="ui-head"><span>Webchat</span><span class="pill">online</span></div>
               <p class="bubble in"><span class="bar w80"></span><span class="bar w50"></span></p>
               <p class="bubble out"><span class="bar w90"></span><span class="bar w60"></span></p>
@@ -161,16 +180,16 @@
             <figcaption>claims &amp; decision writing</figcaption>
           </figure>
           <figure class="mock">
-            <div class="card ui pay">
+            <div class="card pay">
               <div class="ui-head"><span>Payment</span><span class="muted">secure</span></div>
-              <div class="lock" aria-hidden="true">🔒</div>
+              <div class="lock" aria-hidden="true"><svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4.5" y="10.5" width="15" height="10" rx="1.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></div>
               <span class="bar w80"></span><span class="bar w60"></span>
               <span class="btn">processed</span>
             </div>
             <figcaption>secure payments processing</figcaption>
           </figure>
           <figure class="mock">
-            <div class="card ui lob">
+            <div class="card lob">
               <div class="ui-head"><span>Service providers</span></div>
               <div class="lob-map">
                 <span class="node main">claim</span>
@@ -183,53 +202,33 @@
       </div>
     </section>
 
-    <!-- 03 -->
-    <section class="slide case" aria-labelledby="c3">
-      <div class="wrap case-grid">
-        <div class="case-text">
-          <span class="num">03.</span>
-          <div class="case-body">
-            <h3 id="c3">Calendar Management</h3>
-            <p class="small">I manage your schedule carefully, organizing <b>meetings, appointments and reminders</b> so your week runs smoothly. Clear priorities, no double bookings, and <b>reminders that arrive on time</b>.</p>
-          </div>
-        </div>
-        <figure class="case-img"><img src="calendar.webp" alt="A tablet with a weekly calendar beside a pen and coffee on a yellow background" width="1254" height="1254" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <!-- 04 -->
-    <section class="slide case" aria-labelledby="c4">
-      <div class="wrap case-grid">
-        <div class="case-text">
-          <span class="num">04.</span>
-          <div class="case-body">
-            <h3 id="c4">Email Management</h3>
-            <p class="small">I keep your inbox clean, your messages organized and your replies on point, from <b>high-volume inboxes and priority messages</b> to <b>follow-ups and coordination</b>.</p>
-          </div>
-        </div>
-        <figure class="case-img"><img src="email.webp" alt="A laptop with an organized inbox and floating envelopes on a pink background" width="1536" height="1024" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <!-- 05 -->
-    <section class="slide case" aria-labelledby="c5">
-      <div class="wrap case-grid">
-        <div class="case-text">
-          <span class="num">05.</span>
-          <div class="case-body">
-            <h3 id="c5">Travel Management</h3>
-            <p class="small">Full travel coordination: <b>flights, hotels, transport and clean itineraries</b>, with clear timelines that <b>stay within budget</b>.</p>
-          </div>
-        </div>
-        <figure class="case-img"><img src="travel.webp" alt="A passport, boarding pass, sunglasses and model airplane on an orange background" width="1024" height="1024" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section class="slide detail" aria-label="Virtual assistance details">
+    <!-- 03–05: three covers, magazine style -->
+    <section class="case trio-sec" aria-label="Virtual assistance">
       <div class="wrap">
-        <div class="mocks three">
+        <div class="trio">
+          <article class="issue" aria-labelledby="c3">
+            <figure class="plate sq"><img src="img/calendar.webp" alt="A tablet with a weekly calendar beside a pen and coffee on a yellow background" width="1254" height="1254" loading="lazy"></figure>
+            <p class="issue-no mono">(03.)</p>
+            <h3 id="c3" class="issue-title">Calendar Management</h3>
+            <p class="red-copy sm">I manage your schedule carefully, organizing <b>meetings, appointments and reminders</b> so your week runs smoothly. Clear priorities, no double bookings, and <b>reminders that arrive on time</b>.</p>
+          </article>
+          <article class="issue" aria-labelledby="c4">
+            <figure class="plate sq"><img src="img/email.webp" alt="A laptop with an organized inbox and floating envelopes on a pink background" width="1536" height="1024" loading="lazy"></figure>
+            <p class="issue-no mono">(04.)</p>
+            <h3 id="c4" class="issue-title">Email Management</h3>
+            <p class="red-copy sm">I keep your inbox clean, your messages organized and your replies on point, from <b>high-volume inboxes and priority messages</b> to <b>follow-ups and coordination</b>.</p>
+          </article>
+          <article class="issue" aria-labelledby="c5">
+            <figure class="plate sq"><img src="img/travel.webp" alt="A passport, boarding pass, sunglasses and model airplane on an orange background" width="1024" height="1024" loading="lazy"></figure>
+            <p class="issue-no mono">(05.)</p>
+            <h3 id="c5" class="issue-title">Travel Management</h3>
+            <p class="red-copy sm">Full travel coordination: <b>flights, hotels, transport and clean itineraries</b>, with clear timelines that <b>stay within budget</b>.</p>
+          </article>
+        </div>
+
+        <div class="mocks three" aria-label="Virtual assistance details">
           <figure class="mock">
-            <div class="card ui week">
+            <div class="card week">
               <div class="ui-head"><span>This week</span><span class="muted">5 days</span></div>
               <div class="week-grid">
                 <span class="d">mon</span><span class="d">tue</span><span class="d">wed</span><span class="d">thu</span><span class="d">fri</span>
@@ -244,20 +243,20 @@
             <figcaption>scheduling &amp; reminders</figcaption>
           </figure>
           <figure class="mock">
-            <div class="card ui inbox">
+            <div class="card">
               <div class="ui-head"><span>Inbox</span><span class="pill">0 unread</span></div>
               <ul class="rows">
-                <li><span class="tag p1">priority</span><span class="bar w70"></span></li>
-                <li><span class="tag p2">follow-up</span><span class="bar w55"></span></li>
-                <li><span class="tag p3">client</span><span class="bar w80"></span></li>
-                <li><span class="tag p2">follow-up</span><span class="bar w45"></span></li>
-                <li><span class="tag p4">archive</span><span class="bar w60"></span></li>
+                <li><span class="tag t-red">priority</span><span class="bar w70"></span></li>
+                <li><span class="tag t-pink">follow-up</span><span class="bar w55"></span></li>
+                <li><span class="tag t-lav">client</span><span class="bar w80"></span></li>
+                <li><span class="tag t-pink">follow-up</span><span class="bar w45"></span></li>
+                <li><span class="tag t-lime">archive</span><span class="bar w60"></span></li>
               </ul>
             </div>
             <figcaption>inbox organization</figcaption>
           </figure>
           <figure class="mock">
-            <div class="card ui trip">
+            <div class="card">
               <div class="ui-head"><span>Itinerary</span><span class="muted">on budget</span></div>
               <ol class="steps">
                 <li><b>✈</b>flight booked</li>
@@ -273,82 +272,83 @@
     </section>
 
     <!-- 06 -->
-    <section class="slide case posters" aria-labelledby="c6">
+    <section class="case design" aria-labelledby="c6">
       <div class="wrap">
-        <div class="posters-head">
-          <div class="case-body">
-            <h3 id="c6">Visual Design</h3>
-            <p class="small">You give me the idea, and I turn it into a clean design you'll be proud to post: <b>layouts, posters and social media graphics</b>.</p>
-          </div>
-          <span class="num">06.</span>
+        <h3 id="c6" class="stamp case-title">Visual Design</h3>
+        <div class="design-meta">
+          <p class="red-copy">You give me the idea, and I turn it into a clean design you'll be proud to post: <b>layouts, posters and social media graphics</b>.</p>
+          <div class="tags mono"><span class="yr">(06.)</span><ul><li>Layouts</li><li>Posters</li><li>Social media</li></ul></div>
         </div>
-        <figure class="wide-img"><img src="design.webp" alt="Five colorful abstract posters hanging on a white gallery wall" width="1536" height="1024" loading="lazy"></figure>
+      </div>
+      <div class="dark-band">
+        <figure class="wrap wide"><img src="img/design.webp" alt="Five colorful abstract posters hanging on a white gallery wall" width="1536" height="1024" loading="lazy"></figure>
       </div>
     </section>
   </div>
 
   <!-- About -->
-  <section id="about" class="slide about" aria-labelledby="about-h">
-    <div class="wrap about-grid">
-      <div class="about-a">
-        <img src="about.webp" alt="Black and white photo of a quiet desk with a laptop, notebook and headphones by a window" width="933" height="1400" loading="lazy">
-        <p class="sig"><b>John Lander Caballero</b></p>
-        <p class="sig-mail"><span aria-hidden="true">✉</span> <a href="mailto:caballerojohnlander@gmail.com">caballerojohnlander@gmail.com</a></p>
-      </div>
-
-      <div class="about-b">
-        <h2 id="about-h" class="head">I keep operations moving, sometimes fast, sometimes complex, always accurate.</h2>
-        <div class="bio">
-          <p>I'm <b>John Lander Caballero</b>, a highly organized operations specialist with a background in dispute resolution, chargeback prevention, insurance operations and digital administration.</p>
-          <p>Based in Dasmariñas City, Cavite, I've managed chargeback alert networks, kept data accurate across systems and supported customers across every channel.</p>
-          <p>I combine close attention to detail with a technical, problem-solving mindset, making workflows simpler and delivering consistent, high-quality work.</p>
+  <section id="about" class="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <p class="stamp section-stamp" aria-hidden="true">About</p>
+      <div class="about-grid">
+        <div class="about-a">
+          <figure class="plate bw"><img src="img/about.webp" alt="Black and white photo of a quiet desk with a laptop, notebook and headphones by a window" width="933" height="1400" loading="lazy"></figure>
+          <p class="sig">John Lander Caballero</p>
+          <p class="sig-mail mono"><span aria-hidden="true">✉</span> <a href="mailto:caballerojohnlander@gmail.com">caballerojohnlander@gmail.com</a></p>
         </div>
-        <p class="head quote">I love clean data, clear inboxes, and problems that don't solve themselves.</p>
-      </div>
 
-      <div class="about-c">
-        <div class="grp"><h3 class="label">experience</h3>
-        <dl class="tl">
-          <div><dt>May 2026 –<br>Oct 2026</dt><dd><b>Chargeback Prevention Specialist</b>Chargemont LLC<small>alert networks · data integrity · auditing</small></dd></div>
-          <div><dt>2023 –<br>2026</dt><dd><b>Insurance Operations</b>EXL Philippines<small>support · claims · payments · LOB</small></dd></div>
-        </dl></div>
-        <div class="grp"><h3 class="label">education</h3>
-        <dl class="tl">
-          <div><dt>2021</dt><dd><b>Graduated</b>Saint Joseph Academy of Dasmariñas Inc.</dd></div>
-        </dl></div>
-        <div class="grp"><h3 class="label">tools</h3>
-        <ul class="tools">
-          <li>Ethoca</li><li>Verifi</li><li>Google Sheets</li><li>Microsoft Excel</li><li>Webchat</li><li>Email &amp; Calendar</li>
-        </ul></div>
+        <div class="about-b">
+          <h2 id="about-h" class="head">I keep operations moving, sometimes fast, sometimes complex, always accurate.</h2>
+          <div class="bio">
+            <p>I'm <b>John Lander Caballero</b>, a highly organized operations specialist with a background in dispute resolution, chargeback prevention, insurance operations and digital administration.</p>
+            <p>Based in Dasmariñas City, Cavite, I've managed chargeback alert networks, kept data accurate across systems and supported customers across every channel.</p>
+            <p>I combine close attention to detail with a technical, problem-solving mindset, making workflows simpler and delivering consistent, high-quality work.</p>
+          </div>
+          <p class="quote">I love clean data, clear inboxes, and problems that don't solve themselves.</p>
+        </div>
+
+        <div class="about-c">
+          <div class="grp"><h3 class="label mono">experience</h3>
+          <dl class="tl">
+            <div><dt class="mono">May 2026 – Oct 2026</dt><dd><b>Chargeback Prevention Specialist</b><span>Chargemont LLC</span><small class="mono">alert networks · data integrity · auditing</small></dd></div>
+            <div><dt class="mono">2023 – 2026</dt><dd><b>Insurance Operations</b><span>EXL Philippines</span><small class="mono">support · claims · payments · LOB</small></dd></div>
+          </dl></div>
+          <div class="grp"><h3 class="label mono">education</h3>
+          <dl class="tl">
+            <div><dt class="mono">2021</dt><dd><b>Graduated</b><span>Saint Joseph Academy of Dasmariñas Inc.</span></dd></div>
+          </dl></div>
+          <div class="grp"><h3 class="label mono">tools</h3>
+          <ul class="tools">
+            <li>Ethoca</li><li>Verifi</li><li>Google Sheets</li><li>Microsoft Excel</li><li>Webchat</li><li>Email &amp; Calendar</li>
+          </ul></div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="slide skills" aria-labelledby="sk">
+  <section id="skills" class="skills" aria-labelledby="sk">
     <div class="wrap">
-      <div class="skills-head">
-        <span class="num">07.</span>
-        <h2 id="sk" class="title">Core Competencies</h2>
-      </div>
+      <h2 id="sk" class="stamp case-title">Core Competencies</h2>
+      <div class="swatches" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
       <div class="skills-grid">
-        <article class="skill s1">
-          <span class="swatch" aria-hidden="true">01</span>
+        <article class="skill">
+          <span class="n mono">(01)</span>
           <h3>Dispute &amp; Risk Management</h3>
           <ul><li>Ethoca &amp; Verifi alert monitoring</li><li>Prompt refund processing</li><li>Evidence reporting</li><li>Dispute prevention health metrics</li></ul>
         </article>
-        <article class="skill s2">
-          <span class="swatch" aria-hidden="true">02</span>
+        <article class="skill">
+          <span class="n mono">(02)</span>
           <h3>Operations &amp; Data Integrity</h3>
           <ul><li>Data tracking &amp; analysis</li><li>Google Sheets &amp; Excel</li><li>File &amp; contract organization</li><li>Document management</li></ul>
         </article>
-        <article class="skill s3">
-          <span class="swatch" aria-hidden="true">03</span>
+        <article class="skill">
+          <span class="n mono">(03)</span>
           <h3>Customer &amp; Client Relations</h3>
           <ul><li>Inbound &amp; outbound support</li><li>Real-time webchat</li><li>Transaction dispute resolution</li><li>Customer claims processing</li></ul>
         </article>
-        <article class="skill s4">
-          <span class="swatch" aria-hidden="true">04</span>
+        <article class="skill">
+          <span class="n mono">(04)</span>
           <h3>Technical &amp; Administrative</h3>
           <ul><li>System data logging</li><li>Email &amp; calendar management</li><li>Social media graphics</li><li>Computer &amp; digital literacy</li></ul>
         </article>
@@ -357,25 +357,29 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="slide contact" aria-labelledby="ct">
-    <div class="wrap contact-grid">
-      <div>
-        <span class="num">08.</span>
+  <section id="contact" class="contact" aria-labelledby="ct">
+    <div class="wrap">
+      <p class="stamp thanks" aria-hidden="true">Thank you</p>
+      <div class="contact-grid">
         <h2 id="ct" class="contact-title">Tell me what you need.<br>I'll handle the rest.</h2>
+        <div>
+          <p class="connect">Let's connect:</p>
+          <dl class="contact-list mono">
+            <div><dt>email</dt><dd><a href="mailto:caballerojohnlander@gmail.com">caballerojohnlander@gmail.com</a></dd></div>
+            <div><dt>phone</dt><dd><a href="tel:+639760943854">+63 976 094 3854</a></dd></div>
+            <div><dt>location</dt><dd>Dasmariñas City, Cavite, PH</dd></div>
+            <div><dt>status</dt><dd><span class="live" aria-hidden="true"></span>available for new work</dd></div>
+          </dl>
+        </div>
       </div>
-      <dl class="contact-list">
-        <div><dt>email</dt><dd><a href="mailto:caballerojohnlander@gmail.com">caballerojohnlander@gmail.com</a></dd></div>
-        <div><dt>phone</dt><dd><a href="tel:+639760943854">+63 976 094 3854</a></dd></div>
-        <div><dt>location</dt><dd>Dasmariñas City, Cavite, PH</dd></div>
-        <div><dt>status</dt><dd><span class="live" aria-hidden="true"></span>available for new work</dd></div>
-      </dl>
     </div>
   </section>
 </main>
 
 <footer class="footer">
-  <div class="wrap footer-inner">
+  <div class="wrap footer-inner mono">
     <span>© 2026 John Lander Caballero</span>
+    <span class="hide-sm">Dasmariñas City, PH &nbsp; 2026</span>
     <a href="#top">back to top ↑</a>
   </div>
 </footer>
@@ -388,9 +392,9 @@
   });
   menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { btn.setAttribute('aria-expanded', 'false'); menu.classList.remove('open'); }); });
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    var els = document.querySelectorAll('.case-text, .case-img, .wide-img, .mock, .about-grid > div, .skill, .contact-grid > *');
+    var els = document.querySelectorAll('.case-title, .case-grid > *, .mock, .issue, .about-grid > div, .skill, .contact-grid > *, .wide, .design-meta');
     els.forEach(function (el) { el.classList.add('reveal'); });
-    var io = new IntersectionObserver(function (entries) { entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+    var io = new IntersectionObserver(function (entries) { entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.08 });
     els.forEach(function (el) { io.observe(el); });
   }
 </script>
