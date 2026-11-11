@@ -268,3 +268,51 @@ b{font-weight:700}
   .reveal{opacity:1;transform:none;transition:none}
   .scroll-cue span,.live{animation:none}
 }
+
+/* ---------- additions: cv, flow, platforms, portrait ---------- */
+.cv-btn{display:inline-flex;align-self:flex-start;gap:8px;margin-top:18px;font-size:12px;text-transform:uppercase;text-decoration:none;background:var(--red);color:#fff;padding:9px 14px;border:1px solid var(--red);transition:background .25s,color .25s}
+.cv-btn:hover{background:transparent;color:var(--red)}
+.page-l .cv-btn{margin-top:26px}
+#menu a.cv-link{color:var(--red)}
+.plate.portrait img{aspect-ratio:3/4;object-fit:cover;object-position:center 30%}
+
+.flow-sec{margin-top:clamp(56px,8vw,110px)}
+.flow-head{display:grid;grid-template-columns:minmax(0,.6fr) minmax(0,1.4fr);gap:clamp(20px,4vw,60px);align-items:start;margin-bottom:clamp(24px,3vw,40px)}
+.flow-intro{font-weight:700;text-transform:uppercase;font-size:clamp(18px,1.9vw,26px);line-height:1.12;letter-spacing:-.005em}
+.flow-intro b{color:var(--red)}
+.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--rule)}
+.flow li{position:relative;padding:22px clamp(14px,1.8vw,26px) 28px;border-right:1px solid var(--rule)}
+.flow li:first-child{padding-left:0}
+.flow li:last-child{border-right:0}
+.flow li:not(:last-child)::after{content:"→";position:absolute;right:-11px;top:18px;width:22px;height:22px;display:grid;place-items:center;background:var(--paper);color:var(--red);font-family:var(--mono);font-size:14px;z-index:1}
+.fn{font-size:13px;color:var(--red)}
+.flow h4{margin:12px 0;font-weight:900;font-stretch:118%;text-transform:uppercase;font-size:clamp(19px,1.8vw,26px);line-height:1}
+.flow p{font-size:14.5px;color:var(--ink-2);max-width:32ch}
+.flow p b{color:var(--ink)}
+.flow li.stop h4{color:var(--red)}
+
+.platforms{margin-top:clamp(48px,7vw,90px);background:var(--paper-2);border:1px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:clamp(18px,2.6vw,34px)}
+.pf-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px 16px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--ink)}
+.pf-title{font-weight:900;font-stretch:112%;text-transform:uppercase;font-size:clamp(20px,2.2vw,30px);line-height:1}
+.pf-count{font-size:12px;text-transform:uppercase;background:var(--red);color:#fff;padding:3px 10px}
+.pf-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:clamp(18px,2.4vw,34px);padding-top:20px}
+.pf-label{font-size:11.5px;text-transform:uppercase;color:var(--red);padding-bottom:6px;border-bottom:1px solid rgba(20,20,20,.25)}
+.platforms .tools li:nth-child(1),.platforms .tools li:nth-child(2){background:transparent;color:inherit;border-color:var(--ink)}
+.platforms .tools.hot li{background:var(--red);color:#fff;border-color:var(--red)}
+
+@media (max-width:1100px){
+  .flow{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .flow li:nth-child(2){border-right:0}
+  .flow li:nth-child(3){padding-left:0}
+  .flow li:nth-child(-n+2){border-bottom:1px solid var(--rule)}
+  .flow li:nth-child(2)::after{display:none}
+  .pf-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .flow-head{grid-template-columns:1fr;gap:14px}
+  .flow{grid-template-columns:1fr}
+  .flow li,.flow li:first-child,.flow li:nth-child(3){padding-left:0;padding-right:0;border-right:0;border-bottom:1px solid var(--rule)}
+  .flow li:nth-child(2)::after{display:grid}
+  .flow li:not(:last-child)::after{content:"↓";right:auto;top:auto;bottom:-11px;left:0}
+  .pf-grid{grid-template-columns:1fr}
+}
