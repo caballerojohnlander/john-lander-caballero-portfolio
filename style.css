@@ -255,6 +255,8 @@ hr{border:0;border-top:1px solid currentColor;opacity:.35;margin:0}
 .contact-list div{display:grid;grid-template-columns:90px 1fr;gap:12px;padding:10px 0;border-top:1px solid rgba(0,0,0,.3);font-size:14.5px}
 .contact-list div:last-child{border-bottom:1px solid rgba(0,0,0,.3)}
 .contact-list dt{font-family:var(--display);font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding-top:3px}
+.contact-grid>*,.contact-list dd{min-width:0}
+.contact-list dd{overflow-wrap:anywhere}
 .contact-list a{text-decoration:none;font-weight:600}
 .contact-list a:hover{text-decoration:underline}
 .live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--black);margin-right:8px;animation:pulse 1.8s ease-in-out infinite}
@@ -308,6 +310,7 @@ hr{border:0;border-top:1px solid currentColor;opacity:.35;margin:0}
   .cover-title{margin-top:56px}
   .meta-top{grid-template-columns:1fr;gap:10px}
   .meta-top .r{grid-column:auto}
+  .case-title{font-size:12.4vw}
   .meta-top .r{text-align:left}
   .hide-sm{display:none}
   .facts{grid-template-columns:1fr 1fr}
